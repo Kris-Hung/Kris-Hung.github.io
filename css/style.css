@@ -1,13 +1,7 @@
 @font-face { 
-  font-family: Jenna Sue; 
-    src: url('../fonts/JennaSue-webfont.eot'); 
-    src: local("Jenna Sue"), url('../fonts/JennaSue-webfont.ttf'); 
-} 
-
-@font-face { 
-  font-family: News Cycle; 
-    src: url('../fonts/NewsCycle-Regular.eot'); 
-    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+  font-family: Yanone Kaffeesatz; 
+    src: url('../fonts/YanoneKaffeesatz-Regular.eot'); 
+    src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf'); 
 } 
 
 html { 
@@ -25,17 +19,14 @@ article, aside, figure, footer, header, hgroup, nav, section {
 }
 
 body { 
-  font: normal .85em arial, sans-serif;
-  background: #1D1D1D;
-  color: #FFF;
-  padding-bottom: 40px;
+  font: normal .80em arial, sans-serif;
+  background: #4A4E44 url(../images/pattern.png) repeat fixed;
+  color: #403838;
 }
 
 p { 
-  font: normal 1.3em "News Cycle", arial, sans-serif;
   padding: 0 0 20px 0;
-  line-height: 1.5em;
-  text-shadow: #000 1px 1px ;
+  line-height: 1.7em;
 }
 
 img { 
@@ -43,55 +34,62 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 { 
-  font: normal 400% 'Jenna Sue', arial, sans-serif;
+  font: normal 170% arial, sans-serif;
   color: #FFF;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;
 }
 
 h1 { 
-  text-shadow: 1px 1px #000;
+  color: #333;
+  font: 200% 'Yanone Kaffeesatz', arial, sans-serif;
 }
 
 h2 { 
-  font: normal 280% 'Jenna Sue', arial, sans-serif;
-  color: #FFF;  
+  font: normal 130% arial, sans-serif;
+  color: #A50303;  
   margin: 0;
-  padding: 0 0 8px 0;
-  text-shadow: 1px 1px #000;
+  padding: 8px 0 8px 0;
 }
 
 h3 { 
-  font: normal 125% 'trebuchet ms', arial, sans-serif;
-}
+  font: normal 125% 'lucida sans unicode', arial, sans-serif;}
 
 h4, h5, h6 { 
   margin: 0;
   padding: 0 0 5px 0;
   font: normal 110% arial, sans-serif;
-  color: #FFF;
+  color: #B60000;
   line-height: 1.5em;
 }
 
 h5, h6 { 
   font: italic 95% arial, sans-serif;
-  color: #FFF;
+  color: #888;
   padding-bottom: 15px;
 }
 
 h6 { 
-  color: #FFF;
+  color: #362C20;
 }
 
 a, a:hover { 
+  background: transparent;
   outline: none;
-  color: #FFF;
   text-decoration: underline;
+  color: #ACB200;
 }
 
 a:hover { 
   text-decoration: none;
-  color: #FFF;
+  color: #403838;
+}
+
+blockquote { 
+  margin: 20px 0; 
+  padding: 10px 20px 0 20px;
+  border: 1px solid #E5E5DB;
+  background: #FFF;
 }
 
 ul { 
@@ -99,9 +97,8 @@ ul {
 }
 
 ul li { 
-  font: normal 1.3em "News Cycle", arial, sans-serif;
   list-style-type: circle;
-  margin: 0 0 0 0; 
+  margin: 0 0 6px 0; 
   padding: 0 0 4px 5px;
 }
 
@@ -138,203 +135,99 @@ ol li {
 
 #main { 
   width: 950px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto;
 }
 
-header { 
+#header { 
   width: 950px;
-  height: 105px;
+  height: 150px;
 }
 
 #logo { 
-  width: 200px;
-  float: left;
-  height: 100px;
+  width: 900px;
+  position: relative;
+  height: 50px;
   background: transparent;
-  padding: 0 0 10px 0;
+  padding: 35px 25px;
 }
 
-#logo h1 { 
-  font: normal 440% 'Jenna Sue', arial, sans-serif;
-  padding: 60px 0 0 0;
+#logo h1 {
+  float: left;
+  width: 50%;
+  font: normal 355% 'Yanone Kaffeesatz', arial, sans-serif;
+}
+
+#logo h1 a {
+  text-decoration: none;
   color: #FFF;
-  letter-spacing: -2px;
 }
 
-#logo h1 a { 
-  color: #999;
+#logo h1 a .logo_colour { 
+  color: #ACB200;
+}
+
+#logo a:hover .logo_colour { 
+  color: #FFF;
   text-decoration: none;
 }
 
-#logo h1 a:hover { 
-  color: #222;
-  text-decoration: none;
-}
+nav { 
+  float: left;
+  height: 50px;
+  width: 950px;
+  margin: 1px auto 0 auto;
+  border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border: 10px 10px 0 0;
+  background: url(../images/menubar.png);
+} 
 
 #site_content { 
   width: 950px;
   overflow: hidden;
-  margin: 4px auto 0 auto;
-  padding: 0;
+  margin: 44px auto 0 auto;
+  padding: 0px 0px 0px 0px;
+  background: #FFF url(../images/site_content.png) repeat-y;
   border-top: 0;
   border-bottom: 0;
 } 
 
 #sidebar_container { 
-  float: left;
-  width: 250px;
-  padding: 16px 0 0 0;
+  float: right;
+  width: 224px;
+  padding: 10px 10px 20px 10px;
+  background: #F8FBEB;
 }
 
 .sidebar { 
   float: right;
-  width: 223px;
-  margin: 0 0 17px 0;
-  padding: 20px 15px 5px 0px;
-}
-  
-.sidebar h3 { 
-  padding: 0 15px 0px 0;
-  font: 400% 'Jenna Sue', arial, sans-serif;
-  text-shadow:  #000 1px 1px;
-  margin: 0 1px;
-  color: #FFF;
+  padding: 0 15px;
+  width: 192px;
+  margin: 0 0 20px 0;
 }
 
-.sidebar_item, .content_item { 
-  padding: 15px 0;
+.sidebar h1 { 
+  padding: 5px 0 0 0;
+  margin: 0;
 }
 
 #content { 
   text-align: justify;
-  width: 670px;
-  padding: 20px 0 5px 0;
+  width: 706px;
+  padding: 0;
   margin: 0;
-  float: right;
+  background: #EBEDD3;
 }
 
-#content ul, .sidebar ul { 
-  margin: 2px 0 5px 0px;
-}
-
-#content ul li, .sidebar ul li { 
-  list-style-type: none;
-  background: transparent url(../images/bullet.png) no-repeat left center;
-  margin: 0 0 0 0; 
-  padding: 2px 0 2px 28px;
-  line-height: 1.5em;
-}
-
-footer { 
-  width: 950px;
-  font: normal 130% 'News Cycle',  arial, sans-serif;
-  height: 90px;
-  padding: 20px 0 5px 0;
-  text-align: center; 
-  color: #FFF;
-  margin-top: 20px;
-}
-
-footer p { 
-  padding: 0 0 10px 0;
-}
-
-footer a, footer a:hover { 
-  color: #FFF;
-  text-decoration: underline;
-}
-
-footer a:hover { 
-  color: #FFF;
-  text-decoration: none;
-}
-
-/* form styling */
-.form_settings { 
-  margin: 0;
-}
-
-.form_settings p { 
-  padding: 0 0 10px 0;
-}
-
-.form_settings span { 
-  padding: 5px 0; 
-  float: left; 
-  width: 170px; 
-  text-align: left;
-}
-  
-.form_settings input, .form_settings textarea { 
-  padding: 4px; 
-  width: 252px; 
-  color: #FFF;
-  font: 100% arial, sans-serif;
-  border: 0;
-  border-bottom: 1px solid #666; 
-  background: transparent;
-}
-  
-.form_settings .submit { 
-  font: 140% 'News Cycle', arial, sans-serif; 
-  border: 0; 
-  width: 100px; 
-  margin: 0 0 0 162px; 
-  height: 30px;
-  padding: 0 0 6px 0;
-  cursor: pointer; 
-  border-radius: 6px 6px 6px 6px;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  background: #444;
-  text-shadow: 1px 1px #000;
-  color: #FFF;
-  line-height: 15px;
-}
-
-.form_settings textarea, .form_settings select { 
-  font: 100% 'trebuchet ms', arial, sans-serif; 
-  border: 1px solid #666; 
-  border-radius: 6px 6px 6px 6px;
-  -webkit-border-radius: 6px 6px 6px 6px;
-  -moz-border-radius: 6px 6px 6px 6px;
-  width: 250px;
-  overflow: auto;
-}
-
-.form_settings select { 
-  width: 260px;
-}
-
-.form_settings .checkbox { 
-  margin: 4px 0; 
-  padding: 0; 
-  width: 14px;
-  border: 0;
-  background: none;
-}
-
-table { 
-  margin: 10px 0 30px 0;
-}
-
-table tr th, table tr td { 
-  background: #BBB;
-  color: #FFF;
-  padding: 7px 4px;
-  text-align: left;
-}
-  
-table tr td { 
-  background: #DDD;
-  color: #47433F;
-  border-top: 1px solid #FFF;
+#content_item { 
+  width: 654px;
+  padding: 10px 0 10px 25px;
 }
 
 /* styling for the slideshow on the homepage */
 ul.slideshow {
-  width: 950px;
-  height: 350px;
+  width: 706px;
+  height: 270px;
   overflow: hidden;
   position: relative;
   margin: 0;
@@ -354,73 +247,232 @@ ul.slideshow li.show {
 ul img {
   border: none;}
  
-#slideshow-caption {
+footer { 
   width: 950px;
-  height: 90px;
-  position: absolute;
-  bottom: 0;
-  left: 0; 
-  z-index: 500;}
- 
-#slideshow-caption .slideshow-caption-container {
-  padding: 38px 25px 0 25px;   
-  z-index: 1000;}
- 
-#slideshow-caption p {
-  padding: 0;
-  font: normal 100% 'News Cycle', arial, sans-serif;
-  color: #000;
-  text-shadow: none;}
-
-nav { 
-  height: 80px;
-  width: 750px;
-  margin: 1px auto 0 auto;
-  float: right;
-  padding: 35px 0 20px 0;
-} 
-
-/* from here: http://www.gmarwaha.com/blog/2007/08/23/lavalamp-for-jquery-lovers */
-.lavaLampWithImage {
-  position: relative;
-  height: 40px;
-  padding: 15px 5px 15px 0;
-  margin: 10px 0 0 0;
-  overflow: hidden;
-  float: right;
-}
-
-.lavaLampWithImage li {
-  float: left;
-  list-style: none;
-  max-width: auto
-}
-
-.lavaLampWithImage li.back {
-  background: #000;
-  height: 60px;
-  z-index: 8;
-  position: absolute;
-}
-
-.lavaLampWithImage li a {
-  font: normal 100% 'News Cycle', sans-serif;
-  text-shadow: none;
-  text-decoration: none;
+  font: normal 100% arial, sans-serif;
+  height: 85px;
+  padding: 27px 0 5px 0;
+  text-align: center; 
   color: #FFF;
-  outline: none;
-  text-align: center;
-  letter-spacing: 0;
-  z-index: 10;
-  display: block;
-  float: left;
-  line-height: 35px;
-  padding: 7px 0px 0 3px;
-  position: relative;
-  overflow: hidden;
-  margin: auto 16px;    
+  line-height: 14px;
+  border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border: 0 0 10px 10px;
+  background: transparent url(../images/footer.png) repeat;
 }
 
-.lavaLampWithImage li a:hover, .lavaLampWithImage li a:active, .lavaLampWithImage li a:visited {
-  border: none;
+footer a, footer a:hover { 
+  color: #FFF;
+  text-decoration: underline;
+}
+
+footer a:hover { 
+  color: #FFF;
+  text-decoration: none;
+}
+
+.form_settings { 
+  margin: 15px 0 0 0;
+}
+
+.form_settings p { 
+  padding: 0 0 4px 0;
+}
+
+.form_settings span { 
+  float: left; 
+  width: 200px; 
+  text-align: left;
+}
+  
+.form_settings input, .form_settings textarea { 
+  padding: 5px; 
+  width: 299px; 
+  font: 100% arial; 
+  border: 1px solid #E5E5DB; 
+  background: #FFF; 
+  color: #47433F;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;  
+}
+  
+.form_settings .submit { 
+  font: 100% arial; 
+  border: 0; 
+  width: 99px; 
+  margin: 0 0 0 212px; 
+  height: 33px;
+  padding: 2px 0 3px 0;
+  cursor: pointer; 
+  background: #3B3B3B; 
+  color: #FFF;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;  
+}
+
+.form_settings textarea, .form_settings select { 
+  font: 100% arial; 
+  width: 299px;
+}
+
+.form_settings select { 
+  width: 310px;
+}
+
+.form_settings .checkbox { 
+  margin: 4px 0; 
+  padding: 0; 
+  width: 14px;
+  border: 0;
+  background: none;
+}
+
+.separator { 
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #D9D5CF;
+  border-bottom: 1px solid #FFF;
+  margin: 0 0 20px 0;
+}
+  
+table { 
+  margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td { 
+  background: #3B3B3B;
+  color: #FFF;
+  padding: 7px 4px;
+  text-align: left;
+}
+  
+table tr td { 
+  background: #FFF;
+  color: #47433F;
+  border-top: 1px solid #ddd;
+}
+
+
+
+/**
+Stylesheet for SooperFish by www.SooperThemes.com
+Author: Jurriaan Roelofs
+**/
+
+/* Configuration of menu width */
+html body ul.sf-menu ul,html body ul.sf-menu ul li { 
+  width: 220px;
+}
+
+html body ul.sf-menu ul ul 
+{ margin: 0 0 0 220px;
+}
+
+/* Framework for proper showing/hiding/positioning */
+ul.sf-menu,ul.sf-menu * { 
+  margin: 0;
+  padding: 0;
+}
+
+ul.sf-menu { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu li { 
+  display: block;
+  list-style: none;
+  float: left;
+  position: relative;
+}
+  
+ul.sf-menu li:hover { visibility: inherit; /* fixes IE7 'sticky bug' */ }
+
+ul.sf-menu a { 
+  display: block;
+  position: relative;
+}
+  
+ul.sf-menu ul { 
+  position: absolute;
+  left: 0;
+  width: 150px; 
+  top: auto;
+  left: -999999px;
+}
+  
+ul.sf-menu ul a { 
+  zoom: 1; /* IE6/7 fix */ 
+}
+
+ul.sf-menu ul li { 
+  float: left; /* Must always be floated otherwise there will be a rogue 1px margin-bottom in IE6/7 */
+  width: 150px;
+}
+  
+ul.sf-menu ul ul { 
+  top: 0;
+  margin: 0 0 0 150px;
+}
+
+ul.sf-menu li:hover ul,ul.sf-menu li:focus ul,ul.sf-menu li.sf-hover ul, 
+ul.sf-menu ul li:hover ul,ul.sf-menu ul li:focus ul,ul.sf-menu ul li.sf-hover ul,
+ul.sf-menu ul ul li:hover ul,ul.sf-menu ul ul li:focus ul,ul.sf-menu ul ul li.sf-hover ul,
+ul.sf-menu ul ul ul li:hover ul,ul.sf-menu ul ul ul li:focus ul,ul.sf-menu ul ul ul li.sf-hover ul { 
+  left: auto;
+}
+  
+ul.sf-menu li:hover ul ul,ul.sf-menu li:focus ul ul,ul.sf-menu li.sf-hover ul ul,
+ul.sf-menu ul li:hover ul ul,ul.sf-menu ul li:focus ul ul,ul.sf-menu ul li.sf-hover ul ul,
+ul.sf-menu ul ul li:hover ul ul,ul.sf-menu ul ul li:focus ul ul,ul.sf-menu ul ul li.sf-hover ul ul,
+ul.sf-menu ul ul ul li:hover ul ul,ul.sf-menu ul ul ul li:focus ul ul,ul.sf-menu ul ul ul li.sf-hover ul ul { 
+  left: -999999px;
+}
+
+/* autoArrows CSS */
+span.sf-arrow { 
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  top: 23px;
+  right: 5px;
+  display: block;
+  background: url(../images/arrows-white.png) no-repeat 0 0;
+  overflow: hidden; /* making sure IE6 doesn't overflow and expand the box */
+  font-size: 1px;
+}
+
+ul ul span.sf-arrow { 
+  right: 10;
+  top: 17px;
+  background-position: 0 100%;
+}
+
+/* theming the menu */
+ul#nav { 
+  float: left;
+}
+
+ul#nav ul { 
+  background: url(../images/menu_hover.png) repeat;
+  padding-bottom: 15px;
+}
+
+ul#nav li a { 
+  padding:15px 25px 15px 25px;
+  font: 130% arial,verdana,sans;
+  text-shadow:1px 1px #000;
+  text-decoration:none;
+  color:#FFF;
+  margin-right: 2px;
+}
+
+ul#nav ul li a { 
+  padding:10px 25px 10px 25px;
+}
+
+ul#nav li a:hover,ul#nav li a:focus { 
+  color:#C2C406;
 }
