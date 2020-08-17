@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
-  <title>CSS3_three Template</title>
+  <title>My Portfolio Template</title>
   <style type="text/css" media="screen">
     p, table, hr, .box { font-family: arial; margin-bottom:25px; }
     .box p { margin-bottom:10px; }
@@ -12,9 +12,9 @@
 <body>
   <div>
 
-    <h1>&ldquo;CSS3_three&rdquo; Template Documentation</h1>
+    <h1>&ldquo;My Portfolio&rdquo; Template Documentation</h1>
 
-    <p><strong>Template version: 2.0<br />Created: February 27th 2012</strong></p>
+    <p><strong>Template version: 2.0<br />Created: March 19th 2012</strong></p>
 
     <div>
       <p>Thank you for downloading this template.</p>
@@ -60,26 +60,30 @@
     &lt;!-- begin content --&gt;
     &lt;div id=&quot;site_content&quot;&gt;
       &lt;div id=&quot;sidebar_container&quot;&gt;
-        &lt;div class=&quot;sidebar&quot;&gt;&lt;/div&gt;
-        &lt;div class=&quot;sidebar&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;gallery&quot;&gt;
+          &lt;ul class="images"&gt;
+            &lt;li class=&quot;show&quot;&gt;&lt;img src=&quot;images/1.jpg&quot; width=&quot;450&quot; height=&quot;450&quot; alt=&quot;photo_one&quot; /&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src=&quot;images/2.jpg&quot; width=&quot;450&quot; height=&quot;450&quot; alt=&quot;photo_two&quot; /&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;img src=&quot;images/3.jpg&quot; width=&quot;450&quot; height=&quot;450&quot; alt=&quot;photo_three&quot; /&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div id=&quot;content&quot;&gt;
-        &lt;ul class=&quot;slideshow&quot;&gt;
-          &lt;li&gt;&gt;&lt;img width=&quot;706&quot; height=&quot;270&quot; src=&quot;images/1.jpg&quot; alt=&quot;image one&quot; /&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-        &lt;div id=&quot;content_item&quot;&gt;&lt;/div&gt;
-      &lt;/div&gt;
+      &lt;div id=&quot;content&quot;&gt;&lt;/div&gt;
     &lt;/div&gt;
     &lt;!-- end content --&gt;
     &lt;!-- begin footer --&gt;
     &lt;footer&gt;&lt;/footer&gt;
     &lt;!-- end footer --&gt;
   &lt;/div&gt;
+  &lt;p&gt;&amp;nbsp;&lt;/p&gt;
   &lt;!-- jQuery with plugins --&gt;
+  &lt;!-- menu --&gt;
   &lt;script type=&quot;text/javascript&quot;&gt;
-    $(document).ready(function(){
-      &lt;!-- initialise sooperfish menu --&gt;
-      $('ul.sf-menu').sooperfish();
+    $(function() {
+      $(&quot;#lava_menu&quot;).lavaLamp({
+        fx: &quot;backout&quot;,
+        speed: 700
+      });
     });
   &lt;/script&gt;
 &lt;/html&gt;
@@ -103,10 +107,10 @@
 
     <h3 id="fontFiles"><strong>C) Fonts</strong> - <a href="#toc">top</a></h3>
 
-    <p>There is 1 font used in this theme. The font is Yanone Kaffeesatz. The font files are</p>
+    <p>There is 1 font used in this theme. The font is News Cycle. The font files are</p>
     <ol>
-      <li><b>fonts/YanoneKaffeesatz-Regular.ttf</b></li>
-      <li><b>fonts/YanoneKaffeesatz-Regular.eot</b> (IE Specific)</li>
+      <li><b>fonts/NewsCycle-Regular.ttf</b></li>
+      <li><b>fonts/NewsCycle-Regular.eot</b> (IE Specific)</li>
     </ol>
 
     <hr>
@@ -118,17 +122,17 @@
     <ol>
       <li>js/modernizr-1.5.min.js</li>
       <li>js/jquery.min.js</li>
-      <li>js/jquery.easing-sooper.js</li>
-      <li>js/jquery.sooperfish.js</li>
-      <li>js/image_fade.js</li>
+      <li>js/jquery.easing.min.js</li>
+      <li>js/jquery.lavalamp.min.js</li>
+      <li>js/jquery.image_fade.js</li>
     </ol>
 
     <ol>
       <li><b>modernizr</b> is a Javascript library that enables HTML5 elements and feature detects.</li>
       <li><b>jQuery</b> is a Javascript library containing lots of commonly used Javascript functions.</li>
-      <li><b>Easing sooper</b> is a jQuery plugin for easing transitions, optimised for the Sooperfish drop-down menu.</li>
-      <li><b>Sooperfish</b> is a jQuery plugin for the drop-down menu.</li>
-      <li><b>Image fade</b> contains the functions for the gallery image fader on the home page (<b>index.html</b>).</li>
+      <li><b>Easing</b> is a jQuery plugin for easing transitions.</li>
+      <li><b>Lavalamp</b> is a jQuery plugin for the lavalamp menu.</li>
+      <li><b>Image fade</b> contains the functions for the gallery image fader.</li>
     </ol>
 
     <hr>
@@ -140,23 +144,21 @@
     <ul>
       <li><a href="http://www.modernizr.com">modernizr</a> (MIT and BSD licenses)</li>
       <li><a href="http://www.jquery.com">jQuery</a> (MIT and GPL licenses)</li>
-      <li>jQuery easing sooper (BSD license)</li>
-      <li><a href="http://archive.plugins.jquery.com/project/SooperFish">Sooperfish</a> (GPL license)</li>
-      <li>Photos taken by me</li>
-      <li><a href="http://www.patterncooler.com">Background pattern from PatternCooler</a></li>
+      <li><a href="http://www.gmarwaha.com/blog/2007/08/23/lavalamp-for-jquery-lovers/">Lavalamp menu</a></li>
+      <li><a href="http://www.dezinerfolio.com/freebie/project-icon-set">Project Icons - Designed by Navdeep Raj</a>
     </ul>
 
     <hr>
 
     <h3 id="galleries"><strong>F) Image Fader</strong> - <a href="#toc">top</a></h3>
 
-    <p>The image fader shown on the homepage has the following format:</p>
+    <p>The image fader has the following format:</p>
 
     <pre>
-&lt;li&gt;&lt;img width="950" height="450" src="images/image_name.jpg" alt="image one" /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;img width="450" height="450" src="images/image_name.jpg" alt="image one" /&gt;&lt;/li&gt;
     </pre>
 
-    <p>To add an image to the image fader simply add a new list item (li) to the unordered list (ul) with class="slideshow". You need to specify the width of the image, the height of the image, the src and an 'alt' for the image. If you would like the image to hyperlink to another page, simply add an &lt;a&gt;&lt;/a&gt; around the &lt;img&gt; tag.</p>
+    <p>To add an image to the image fader simply add a new list item (li) to the unordered list (ul) with class="images". You need to specify the width of the image, the height of the image, the src and an 'alt' for the image. If you would like the image to hyperlink to another page, simply add an &lt;a&gt;&lt;/a&gt; around the &lt;img&gt; tag.</p>
     <p>NOTE: Remember to put 'class="show"' on the first &lt;li&gt; in the list, so that the image fader knows which one to start with.</p>
 
     <hr>
